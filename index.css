@@ -6,6 +6,25 @@ body{
     font-style: normal;
 }
 
+.nav-underline .nav-link:focus, .nav-underline .nav-link:hover {
+    border-bottom-color: rebeccapurple;
+    border-bottom-width: medium;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    border-bottom-color: rebeccapurple;
+    border-bottom-width: medium;
+}
+
+.carousel-item {
+    max-height: 40vw;
+}
+
+#social-media img {
+    max-height: 10vw;
+}
+
+/* 
 header{
     background-color: aquamarine;
     font-size: larger;
@@ -63,4 +82,4 @@ img {
 #main-banner{
     display: flex;
     justify-content: space-between;
-}
+} */
