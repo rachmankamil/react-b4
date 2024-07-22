@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:wght@300;400;700&display=swap');
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: aquamarine;
+    font-size: larger;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#navigation ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#navigation li{
+    border-radius: 25px;
+    float: left;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+#navigation li:hover{
+    background-color: rgb(3, 3, 73);
+    padding: 20px;
+}
+
+#navigation li:hover a {
+    color: white;
+}
+
+#navigation a{
+    color: #000;
+    text-decoration: none;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.tag-center{
+    margin: 0 auto;
+}
+
+img {
+    max-width: 50vw;
+    max-height: 50vh;
+}
+
+#main-banner{
+    display: flex;
+    justify-content: space-between;
+}
