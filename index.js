@@ -25,6 +25,8 @@
 // numberCheck(15)
 // numberCheck(4)
 
+document.title = "Changed website by JS"
+
 function addClick() {
     let title = document.getElementById("titleinput")
     let year = document.getElementById("yearinput")
@@ -32,6 +34,7 @@ function addClick() {
 
     AddTableData(title.value, year.value, company.value)
 
+    alert("Terima kasih sudah berkontribusi")
     title.value = ""
     year.value = ""
     company.value = ""
@@ -50,3 +53,10 @@ function AddTableData(title, year, company) {
     c2.innerHTML = year
     c3.innerHTML = company 
 }
+
+function tesajah() {
+    let time = new Date()
+    console.log(time.getSeconds());
+}
+
+setInterval(tesajah, 1000)
