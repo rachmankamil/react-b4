@@ -32,12 +32,15 @@ function addClick() {
     let year = document.getElementById("yearinput")
     let company = document.getElementById("companyinput")
 
-    AddTableData(title.value, year.value, company.value)
-
-    alert("Terima kasih sudah berkontribusi")
-    title.value = ""
-    year.value = ""
-    company.value = ""
+    if (year.value.length != 4){
+        alert("Year salah, isi dengan 4 angka")
+    } else {
+        AddTableData(title.value, year.value, company.value)
+        alert("Terima kasih sudah berkontribusi")
+        title.value = ""
+        year.value = ""
+        company.value = ""
+    }
 }
 
 function AddTableData(title, year, company) {
@@ -59,4 +62,16 @@ function tesajah() {
     console.log(time.getSeconds());
 }
 
-setInterval(tesajah, 1000)
+//setInterval(tesajah, 1000)
+
+let darkmode_status = true
+
+function darkmode() {
+    var table = document.getElementById("ach-table")
+    if (darkmode_status) {
+        table.classList.remove('table-dark')
+    } else {
+        table.classList.add('table-dark')
+    }
+    darkmode_status = !darkmode_status
+}
